@@ -8,7 +8,7 @@ import '../styles/Home.css'
 import '../styles/Tutors.css'
 import { homeSection } from '../data/HomeSection'
 import { courseSection } from '../data/CourseSection'
-import { tutorsSection, tutorsList } from '../data/tutorsSection'
+import { tutorSection, tutorList } from '../data/TutorSection'
 import { partnersSection, partnersList } from '../data/PartnersSection'
 import parse from 'html-react-parser'
 
@@ -33,10 +33,9 @@ function Home() {
             <section id="tutors">
                 <div className="tengah">
                     <div className="kolom">
-                        {parse(tutorsSection.content)}
+                        {parse(tutorSection.content)}
                     </div>
-                    <Tutors data={tutorsList} />
-                    
+                    <Tutors data={tutorList} />
                 </div>
             </section>
             <section id="partners">

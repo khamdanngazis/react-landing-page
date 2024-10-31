@@ -1,10 +1,10 @@
-export const tutorsSection = {
+export const tutorSection = {
     content : `<p className="deskripsi">Our Top Tutors</p>
     <h2>Tutors</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p>`
 }
 
-export const tutorsList = [
+export const tutorList = [
     {
         image : "https://dfu1k3y1rami2.cloudfront.net/wp-content/uploads/2014/07/26195109/2020_cb.jpg",
         name : "Jason Lee Scott"

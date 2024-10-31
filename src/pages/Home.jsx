@@ -8,7 +8,6 @@ import '../styles/Home.css'
 import '../styles/Tutors.css'
 import { homeSection } from '../data/HomeSection'
 import { courseSection } from '../data/CourseSection'
-import { tutorsSection, tutorsList } from '../data/tutorsSection'
 import { partnersSection, partnersList } from '../data/PartnersSection'
 import parse from 'html-react-parser'
 
@@ -29,15 +28,6 @@ function Home() {
                     {parse(courseSection.content)}
                 </div>
                 <img src={courseSection.image}/>
-            </section>
-            <section id="tutors">
-                <div className="tengah">
-                    <div className="kolom">
-                        {parse(tutorsSection.content)}
-                    </div>
-                    <Tutors data={tutorsList} />
-                    
-                </div>
             </section>
             <section id="partners">
                 <div className="tengah">
